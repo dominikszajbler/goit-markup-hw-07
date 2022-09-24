@@ -20,27 +20,26 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <nav class="header__navi navi">
-          <a class="header__link-general link-general" href="index.html"
-            ><span class="header__logo logo">Web</span>Studio</a
-          >
+        <nav class="header__navi">
+          <a class="comp-name comp-name--light-bgd" href="index.html"
+          ><span class="comp-name__first-word">Web</span>Studio</a>
 
-          <ul class="header__navi-links navi-links">
-            <li class="navi-links-element">
-              <a class="link tablink" href="index.html">Agencja</a>
+          <ul class="header__navi-tabs">
+            <li class="header__tab">
+              <a class="header__tab--viewed link" href="index.html">Agencja</a>
             </li>
 
-            <li>
-              <a class="link" href="portfolio.html">Portfolio</a>
+            <li class="header__tab">
+              <a class="header__tab--unviewed link" href="portfolio.html">Portfolio</a>
             </li>
 
-            <li>
-              <a class="link" href="#">Kontakt</a>
+            <li class="header__tab">
+              <a class="header__tab--unviewed link" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contact">
+        <ul class="header__contact contact">
           <li>
             <a class="link contact-link" href="mailto:info@devstudio.com">
               <span>
@@ -401,51 +400,51 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="ft-container">
-          <h3>
-            <a class="link-general" href="index.html"
-              ><span class="logo">Web</span><span class="studio">Studio</span></a
+      <div class="footer__container container">
+        <div class="footer__address-section">
+          <h3 class="footer__comp-name">
+            <a class="comp-name footer__comp-name--dark-bgd" href="index.html"
+              ><span class="comp-name__first-word">Web</span><span class="comp-name__second-word--dark-bgd">Studio</span></a
             >
           </h3>
-          <address class="address">
-            <ul class="contact-links">
-              <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
+          <address class="footer__address">
+            <ul class="footer__address-links">
+              <li class="footer__address-links--post" >m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__address-links--email">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li>
+              <li class="footer__address-links--phone">
                 <a class="link" href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="social-container">
-          <h3>DOŁĄCZ DO NAS</h3>
-          <ul class="social-icons">
+        <div class="footer__social-section">
+          <h3 class="footer__social-section-head">DOŁĄCZ DO NAS</h3>
+          <ul class="footer__social-icons social-icons">
             <li>
-              <a class="social-link ft-social-link" href="#">
+              <a class="social-link social-link--dark-bgd" href="#">
                 <svg class="ft-sc-icon social">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-link ft-social-link" href="#">
+              <a class="social-link social-link--dark-bgd" href="#">
                 <svg class="ft-sc-icon social">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-link ft-social-link" href="#">
+              <a class="social-link social-link--dark-bgd" href="#">
                 <svg class="ft-sc-icon social">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-link ft-social-link" href="#">
+              <a class="social-link social-link--dark-bgd" href="#">
                 <svg class="ft-sc-icon social">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -469,6 +468,7 @@
         </div>
       </div>
     </footer>
+    <!-- ---------bacdrop-------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
