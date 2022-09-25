@@ -527,22 +527,18 @@ svg {
   height: 136px;
 }
 
-.ft-form-container {
+.footer__form-section {
   margin-top: 12px;
   margin-left: 78px;
   max-width: 600px;
   height: 136px;
-
-  /* position: relative; */
-  /* border: 1px solid red; */
 }
-.ft-form {
+.footer__form {
   display: flex;
   align-items: baseline;
-  /* text-align: center; */
 }
 
-.ft-input {
+.footer__form__form-input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -557,11 +553,11 @@ svg {
   color: var(--footer-text-color);
   
 }
-.ft-input::placeholder {
+.footer__form__form-input::placeholder {
   color: var(--ft-contact-color);
 }
 
-.ft-submit-btn {
+.footer__form__submit-button {
   width: 200px;
   height: 50px;
   background: var(--active-link-color);
@@ -573,7 +569,6 @@ svg {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  /* position: relative; */
   letter-spacing: 0.06em;
   display: flex;
   justify-content: space-around;
@@ -581,17 +576,10 @@ svg {
   padding-left: 34px;
   cursor: pointer;
 }
-.icon-send {
+.footer__form__submit-button--icon-send {
   margin-top: 11px;
-  /* margin-left: 24px; */
   width: 24px;
   height: 24px;
-
-  /* border: 1px solid red; */
-
-  /* position: absolute;
-  top: 11px;
-  right: 28px; */
 }
 
 /* =============backdrop============= */
