@@ -7,7 +7,7 @@
   --active-link-color: rgba(33, 150, 243, 1);
   --animation-bg-color: rgba(33, 150, 243, 0.9);
   --addition-bg-color: rgba(47, 48, 58, 1);
-  --signature-box-color: rgba(47, 48, 58, 0.8);
+  --activity__box__signature-box-color: rgba(47, 48, 58, 0.8);
   --footer-text-color: rgba(255, 255, 255, 1);
   --button-bg-color: rgba(245, 244, 250, 1);
   --ft-contact-color: rgba(255, 255, 255, 0.6);
@@ -45,6 +45,14 @@ svg {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.sectionheader {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 
@@ -226,40 +234,32 @@ svg {
   line-height: 1.71;
   color: var(--alt-text-color);
 }
-.activity .container {
+.activity__section .container {
   display: flex;
-  /* flex-direction: row | row-reverse | column | column-reverse; */
   flex-direction: column;
-  /* margin: 94px auto; */
-}
-.activity {
+  }
+.activity__section {
   padding-top: 0;
 }
-.team {
-  background-color: rgba(245, 244, 250, 1);
-  /* padding: 94px; */
-}
-.team .container {
-  display: flex;
-  flex-direction: column;
-}
-.scope {
+
+.activity__boxes {
   display: flex;
   justify-content: space-between;
-  
 }
-.signed {
+.activity__box__plaece {
   display: flex;
   position: relative;
 }
-.signed > .signature-box {
+
+.activity__box__plaece>.activity__box__signature-box {
   position: absolute;
   bottom: 0;
 }
-.signature-box {
+
+.activity__box__signature-box {
   width: 370px;
   height: 70px;
-  background-color: var(--signature-box-color);
+  background-color: var(--activity__box__signature-box-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -269,13 +269,15 @@ svg {
   color: var(--footer-text-color);
   padding-top: 27px;
 }
-.sectionheader {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin: 0 auto;
-  padding-bottom: 50px;
+.team {
+  background-color: rgba(245, 244, 250, 1);
+  /* padding: 94px; */
 }
+.team .container {
+  display: flex;
+  flex-direction: column;
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
