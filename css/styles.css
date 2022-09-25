@@ -32,11 +32,11 @@ h4 {
   padding: 0;
   margin: 0;
 }
-
+svg {
+  fill: currentColor;
+}
 .container {
   max-width: 1200px;
-  /* technical borderline   */
-  /* border: 1px solid red; */
   margin: 0 auto;
   display: flex;
   padding-left: 15px;
@@ -46,19 +46,15 @@ h4 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-svg {
-  fill: currentColor;
-}
+
 
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .header .container {
   justify-content: space-between;
-  /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly */
-  align-items: center;
-  /* stretch | flex-start | flex-end | */
-  height: 80px;
+   align-items: center;
+   height: 80px;
 }
 .header__navi {
   display: flex;
@@ -85,8 +81,6 @@ svg {
   background-color: transparent;
   height: 4px;
   border-radius: 2px;
-  /* margin-right: 23px;
-  margin-left: 23px; */
   display: block;
   top: 46px;
   left: 0;
@@ -122,14 +116,12 @@ svg {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  /* line-height: 1.19; */
   color: rgba(0, 0, 0, 1);
   margin-right: 47px;
 }
 .comp-name__first-word {
   color: var(--active-link-color);
 }
-
 .comp-name:visited {
   color: transparent;
 }
@@ -139,8 +131,6 @@ svg {
 .header__contact {
   display: flex;
   align-items: baseline;
-
-  /* background-color: aquamarine; */
 }
 .header__contact .link {
   color: var(--alt-text-color);
@@ -163,15 +153,14 @@ svg {
 }
 
 
-.home-buttonfield .container {
+.order-buttonfield__section .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 106px;
   padding-bottom: 106px;
-  /* height: 600px; */
 }
-.home-buttonfield {
+.order-buttonfield__section {
   background: var(--addition-bg-color);
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
     url('../images/img_background.jpg');
@@ -183,7 +172,7 @@ svg {
   /* border-radius: 0px; */
   /* height: 600px; */
 }
-.welcome {
+.order-buttonfield__head {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -198,7 +187,7 @@ svg {
   margin-right: auto;
 }
 
-.orderbutton {
+.order-buttonfield__button {
   background-color: var(--active-link-color);
   color: var(--footer-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -214,23 +203,29 @@ svg {
   width: 200px;
   height: 50px;
 }
-.about {
-  /* border: 1px solid r  ed; */
+.strengths__boxes {  
   display: flex;
   height: 100%;
-  /* padding-top: 94px; */
-}
-.strengths {
+  }
+.strengths__single-box-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: auto; */
   width: 270px;
   height: 120px;
   background: var(--button-bg-color);
   border-radius: 4px;
 }
+.strengths__single-box__text-header {
+  font-size: 14px;
+  line-height: 1.71;
+  padding-top: 30px;
+}
 
+.strengths__single-box__text {
+  line-height: 1.71;
+  color: var(--alt-text-color);
+}
 .activity .container {
   display: flex;
   /* flex-direction: row | row-reverse | column | column-reverse; */
@@ -251,9 +246,7 @@ svg {
 .scope {
   display: flex;
   justify-content: space-between;
-  /* margin:   0 auto; */
-
-  /* height: 100%; */
+  
 }
 .signed {
   display: flex;
@@ -287,15 +280,7 @@ svg {
   display: flex;
   justify-content: space-between;
 }
-.text-header {
-  font-size: 14px;
-  line-height: 1.71;
-  padding-top: 30px;
-}
-.text {
-  line-height: 1.71;
-  color: var(--alt-text-color);
-}
+
 .teamlabel {
   font-size: 16px;
   line-height: 1.875;
