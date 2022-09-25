@@ -491,9 +491,6 @@ svg {
   padding-bottom: 60px;
 }
 
-.link-general__second-word--dark-bgd {
-  color: var(--footer-text-color);
-}
 .footer__address {
   padding-top: 20px;
   font-style: normal;
