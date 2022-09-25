@@ -198,7 +198,7 @@ svg {
 }
 /* =============main============= */
 
-.order-buttonfield__section .container {
+.order-buttonfield .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,7 +248,7 @@ svg {
   width: 200px;
   height: 50px;
 }
-.strengths__boxes {  
+.strengths {  
   display: flex;
   height: 100%;
   }
@@ -271,11 +271,11 @@ svg {
   line-height: 1.71;
   color: var(--alt-text-color);
 }
-.activity__section .container {
+.activity .container {
   display: flex;
   flex-direction: column;
   }
-.activity__section {
+.activity {
   padding-top: 0;
 }
 
@@ -306,11 +306,11 @@ svg {
   color: var(--footer-text-color);
   padding-top: 27px;
 }
-.team__section {
+.team {
   background-color: rgba(245, 244, 250, 1);
   
 }
-.team__section .container {
+.team .container {
   display: flex;
   flex-direction: column;
 }
@@ -347,11 +347,11 @@ svg {
   display: flex;
   flex-direction: column;
 }
-.clients__logos {
+.clients {
   display: flex;
   justify-content: space-between;
 }
-.clients__logos__logo-icon {
+.clients__logo-icon {
   fill: var(--icons-color);
   width: 170px;
   height: 92px;
@@ -361,16 +361,16 @@ svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
-.clients__logos__logo-pleace:focus .clients__logos__logo-icon,
-.clients__logos__logo-icon:hover,
-.clients__logos__logo-icon:active,
-.clients__logos__logo-icon:focus {
+.clients__logo-pleace:focus .clients__logo-icon,
+.clients__logo-icon:hover,
+.clients__logo-icon:active,
+.clients__logo-icon:focus {
   fill: var(--active-link-color);
   border: 1px solid var(--active-link-color);
 }
 
 /* ==============portfolio============= */
-.portfolio__section .container {
+.portfolio .container {
   display: flex;
   flex-direction: column;
 }

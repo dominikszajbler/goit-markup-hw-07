@@ -1,0 +1,26 @@
+.strengths {
+    display: flex;
+    height: 100%;
+
+
+&__single-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: $button-bg-color;
+    border-radius: 4px;
+}
+
+&__single-box__text-header {
+    font-size: 14px;
+    line-height: 1.71;
+    padding-top: 30px;
+
+&__text {
+    line-height: 1.71;
+    color: $alt-text-color;
+}
+}
+}
