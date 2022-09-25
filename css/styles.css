@@ -571,48 +571,31 @@ svg {
 }
 
 /* =============backdrop============= */
-.backdrop {
+.order-the-service__backdrop {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  /* opacity: 0.2;
-  visibility: visible; */
   transition: opacity 500ms, visibility 500ms;
 }
-.modal {
+.order-the-service__modal {
   position: relative;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
   width: 528px;
   min-height: 581px;
   background-color: var(--footer-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  /* od mentora */
+  
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
-  /* animation: scaleModal 3000ms 1;
-}
- @keyframes scaleModal {
-   0% {
-     transform: scale(0);
-   }
+  }
 
-   50% {
-     transform: scale(0.5);
-   }
-
-   100% {
-     transform: scale(1);
-   } */
-}
-
-.close-btn {
+.order-the-service__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -626,21 +609,21 @@ svg {
   align-items: center;
   justify-content: center;
 }
-.is-hidden {
+.order-the-service__is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-/* od mentora */
-.is-hidden .modal {
+
+.order-the-service__is-hidden .order-the-service__modal {
   transform: translate(-50%, -50%) scale(0);
 }
-.form-group {
+.order-the-service__form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-group p {
+.order-the-service__form-group p {
   margin-top: 40px;
   margin-bottom: 12px;
   font-weight: 700;
@@ -648,7 +631,7 @@ svg {
   line-height: 23px;
   text-align: center;
 }
-.personal-lbl {
+.order-the-service__label {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
@@ -661,7 +644,7 @@ svg {
   color: var(--alt-text-color);
 }
 
-.form-icon {
+.order-the-service__form-icon {
   fill: var(--text-color);
   position: absolute;
   width: 15px;
@@ -670,7 +653,7 @@ svg {
   left: 15px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.textarea {
+.order-the-service__textarea {
   resize: none;
   min-width: 448px;
   min-height: 120px;
@@ -681,14 +664,14 @@ svg {
   padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.textarea::placeholder {
+.order-the-service__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.personal-input {
+.order-the-service__input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -697,22 +680,22 @@ svg {
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.personal-input:hover,
-.personal-input:focus,
-.personal-input:active,
-.textarea:hover,
-.textarea:focus,
-.textarea:active {
+.order-the-service__input:hover,
+.order-the-service__input:focus,
+.order-the-service__input:active,
+.order-the-service__textarea:hover,
+.order-the-service__textarea:focus,
+.order-the-service__textarea:active {
   border-color: var(--active-link-color);
   outline: none;
 }
-.personal-input:hover + .form-icon,
-.personal-input:focus + .form-icon,
-.personal-input:active + .form-icon {
+.order-the-service__input:hover + .order-the-service__form-icon,
+.order-the-service__input:focus + .order-the-service__form-icon,
+.order-the-service__input:active + .order-the-service__form-icon {
   fill: var(--active-link-color);
 }
 
-.checkbox-lbl {
+.order-the-service__checkbox {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -723,7 +706,7 @@ svg {
   position: relative;
   cursor: pointer;
 }
-.checkbox-input {
+.order-the-service__checkbox-input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -740,7 +723,7 @@ svg {
   cursor: pointer;
   }
 
-.checkbox-input:checked {
+.order-the-service__checkbox-input:checked {
   background-color: var(--active-link-color);
   outline: 2px solid var(--active-link-color);
   border-radius: 2px;
@@ -751,10 +734,10 @@ svg {
   background-size: cover;
   background-position: center;
 }
-.lbl-link {
+.order-the-service__checkbox-link {
   color: var(--active-link-color);
 }
-.modal-submit-btn {
+.order-the-service__form__submit-button {
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
