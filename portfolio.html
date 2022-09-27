@@ -68,20 +68,20 @@
       <section class="portfolio section">
         <div class="portfolio__container container">
           <ul class="portfolio__filter-buttons">
-            <li class="portfolio__filter-buttons--all">
-              <button class="portfolio__filter-buttons__button" type="button">Wszystkie</button>
+            <li class="portfolio__filter portfolio__filter--all">
+              <button class="portfolio__filter-button" type="button">Wszystkie</button>
             </li>
-            <li class="portfolio__filter-buttons--webside">
-              <button class="portfolio__filter-buttons__button" type="button">Strony</button>
+            <li class="portfolio__filter portfolio__filter--webside">
+              <button class="portfolio__filter-button" type="button">Strony</button>
             </li>
-            <li class="portfolio__filter-buttons--app">
-              <button class="portfolio__filter-buttons__button" type="button">Aplikacje</button>
+            <li class="portfolio__filter portfolio__filter--app">
+              <button class="portfolio__filter-button" type="button">Aplikacje</button>
             </li>
-            <li class="portfolio__filter-buttons--design">
-              <button class="portfolio__filter-buttons__button" type="button">Dizajn</button>
+            <li class="portfolio__filter portfolio__filter--design">
+              <button class="portfolio__filter-button" type="button">Dizajn</button>
             </li>
-            <li class="portfolio__filter-buttons--marketing">
-              <button class="portfolio__filter-buttons__button" type="button">Marketing</button>
+            <li class="portfolio__filter portfolio__filter--marketing">
+              <button class="portfolio__filter-button" type="button">Marketing</button>
             </li>
           </ul>
           <ul class="portfolio__creations-box">
@@ -273,17 +273,18 @@
       <div class="footer__container container">
         <div class="footer__address-section">
           <h3 class="footer__comp-name">
-            <a class="comp-name footer__comp-name--dark-bgd" href="index.html"
-              ><span class="comp-name__first-word">Web</span><span class="comp-name__second-word--dark-bgd">Studio</span></a
+            <a class="comp-name footer__comp-name" href="index.html"
+              ><span class="comp-name__first-word">Web</span
+              ><span class="comp-name__second-word comp-name__second-word--dark-bgd">Studio</span></a
             >
           </h3>
           <address class="footer__address">
             <ul class="footer__address-links">
-              <li class="footer__address-links--post" >m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="footer__address-links--email">
+              <li class="footer__address-link footer__address-link--post">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__address-link footer__address-link--email">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="footer__address-links--phone">
+              <li class="footer__address-link footer__address-link--phone">
                 <a class="link" href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
@@ -292,30 +293,30 @@
         <div class="footer__social-section">
           <h3 class="footer__social-section-head">DOŁĄCZ DO NAS</h3>
           <ul class="footer__social-icons social-icons-box">
-            <li class="social-icon--icon-instagram">
+            <li class="social-icon social-icon--icon-instagram">
               <a class="social-icon__space social-icon__space--dark-bgd" href="#">
-                <svg class="social-icon social-icon--dark-bgd">
+                <svg class="social-icon__svg social-icon__svg--dark-bgd">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon--icon-twitter">
+            <li class="social-icon social-icon--icon-twitter">
               <a class="social-icon__space social-icon__space--dark-bgd" href="#">
-                <svg class="social-icon social-icon--dark-bgd">
+                <svg class="social-icon__svg social-icon__svg--dark-bgd">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon--icon-facebook">
+            <li class="social-icon social-icon--icon-facebook">
               <a class="social-icon__space social-icon__space--dark-bgd" href="#">
-                <svg class="social-icon social-icon--dark-bgd">
+                <svg class="social-icon__svg social-icon__svg--dark-bgd">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon--icon-linkedin">
+            <li class="social-icon social-icon--icon-linkedin">
               <a class="social-icon__space social-icon__space--dark-bgd" href="#">
-                <svg class="social-icon social-icon--dark-bgd ">
+                <svg class="social-icon__svg social-icon__svg--dark-bgd">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -324,13 +325,18 @@
         </div>
         <div class="footer__form-section">
           <h3 class="footer__form-section-head">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <form class="footer__form" name="newsletter_email" autocomplete="on">
-            <label class="footer__form__form-label">
-              <input class="footer__form__form-input" type="email" name="email" placeholder="E-mail" />
+          <form class="ft-form" name="newsletter_email" autocomplete="on">
+            <label class="ft-form__label">
+              <input
+                class="ft-form__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
-            <button class="footer__form__submit-button" type="submit">
-              Zapisz się<span class="footer__form__submit-button-icon">
-                <svg class="footer__form__submit-button--icon-send">
+            <button class="ft-form__submit-button" type="submit">
+              Zapisz się<span class="ft-form__submit-button-icon">
+                <svg class="submit-button__icon-send">
                   <use href="./images/icons.svg#icon-send"></use></svg
               ></span>
             </button>

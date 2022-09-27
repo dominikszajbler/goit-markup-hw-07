@@ -218,7 +218,6 @@ svg {
   line-height: 1.88;
   cursor: pointer;
   font-weight: 700;
-  font-family: "Roboto";
   font-style: normal;
   margin: 0 auto;
   width: 200px;
@@ -347,7 +346,7 @@ svg {
   padding-bottom: 50px;
 }
 
-.portfolio__filter-buttons .portfolio__filter-buttons__button {
+.portfolio__filter-buttons .portfolio__filter-button {
   font-family: "Roboto";
   font-style: normal;
   border: none;
@@ -361,10 +360,7 @@ svg {
   margin: 0 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio__filter-buttons .portfolio__filter-buttons__button:active,
-.portfolio__filter-buttons .portfolio__filter-buttons__button:focus,
-.portfolio__filter-buttons .portfolio__filter-buttons__button:hover {
+.portfolio__filter-buttons .portfolio__filter-button:active, .portfolio__filter-buttons .portfolio__filter-button:focus, .portfolio__filter-buttons .portfolio__filter-button:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
