@@ -88,6 +88,9 @@ svg {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-icon__space--dark-bgd {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .social-icon__svg {
   fill: rgb(175, 177, 184);
@@ -96,19 +99,10 @@ svg {
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-icon__space:focus .social-icon__svg,
-.social-icon__svg:focus,
-.social-icon__svg:active,
-.social-icon__svg:hover {
+.social-icon__space:focus .social-icon__svg, .social-icon__svg:focus, .social-icon__svg:active, .social-icon__svg:hover {
   fill: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
 }
-
-.social-icon__space--dark-bgd {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social-icon__svg--dark-bgd {
   fill: rgb(255, 255, 255);
 }
