@@ -231,7 +231,7 @@ svg {
   height: 50px;
 }
 
-.strengths {
+.strengths__list {
   display: flex;
   height: 100%;
 }
@@ -244,12 +244,12 @@ svg {
   background: rgb(245, 244, 250);
   border-radius: 4px;
 }
-.strengths__single-box__text-header {
+.strengths__box-header {
   font-size: 14px;
   line-height: 1.71;
   padding-top: 30px;
 }
-.strengths__single-box__text-header__text {
+.strengths__box-text {
   line-height: 1.71;
   color: rgb(117, 117, 117);
 }

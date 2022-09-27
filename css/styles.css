@@ -242,7 +242,7 @@ svg {
   line-height: 1.88;
   cursor: pointer;
   font-weight: 700;
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   font-style: normal;
   margin: 0 auto;
   width: 200px;
