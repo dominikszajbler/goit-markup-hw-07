@@ -313,14 +313,15 @@ svg {
   color: rgb(117, 117, 117);
 }
 
-.clients {
-  display: flex;
-  justify-content: space-between;
-}
-.clients__section .container {
+.clients .container {
   display: flex;
   flex-direction: column;
 }
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .clients__logo-icon {
   fill: rgb(175, 177, 184);
   width: 170px;
@@ -330,7 +331,11 @@ svg {
   border-radius: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__logo-pleace:focus .clients__logo-icon, .clients__logo-icon:hover, .clients__logo-icon:active, .clients__logo-icon:focus {
+
+.clients__logo-pleace:focus .clients__logo-icon,
+.clients__logo-icon:hover,
+.clients__logo-icon:active,
+.clients__logo-icon:focus {
   fill: rgb(33, 150, 243);
   border: 1px solid rgb(33, 150, 243);
 }
