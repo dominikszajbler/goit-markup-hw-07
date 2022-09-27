@@ -21,13 +21,12 @@
     line-height: 1.875;
     text-align: center;
     padding: 30px;
-    background-color: $footer-text-color;
-&__name {
+    background-color: $footer-text-color;}
+&__member-name {
     font-weight: 500;
 }
 
-&__profession {
+&__member-profession {
     color: $alt-text-color;
-}
 }
 }
