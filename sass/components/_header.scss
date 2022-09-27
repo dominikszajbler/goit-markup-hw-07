@@ -1,23 +1,31 @@
 .header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+
 & .container {
     justify-content: space-between;
     align-items: center;
     height: 80px;
 }
+
 &__navi {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-&__navi-tabs {
+&__tab--viewed {
+    color: $active-link-color;
+}
+}
+
+.header__navi-tabs {
     display: flex;
     padding: 23px;
     position: relative;
-& .link {
-    margin: 23px;
 }
-& .link::after {
+.header__navi-tabs .link {
+    margin: 23px;
+&::after {
     position: absolute;
     top: 28px;
     content: '';
@@ -32,40 +40,32 @@
     pointer-events: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-}
-&__tab--viewed {
-    color: $active-link-color;
-}
-
-&__navi-tabs .header__tab--viewed::after,
-&__navi-tabs .link:hover::after,
-&__navi-tabs .link:focus::after {
+&:hover::after,
+&:focus::after {
     background-color: $active-link-color;
 }
-
-&__contact {
+}
+.header__navi-tabs .header__tab--viewed::after {
+    background-color: $active-link-color;
+}
+.header__contacts {
     display: flex;
     align-items: baseline;
-
-
-& .link {
+}
+.header__contacts .link {
     color: $alt-text-color;
     fill: $alt-text-color;
     margin: 25px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-& .link:hover,
-& .link:focus {
+&:hover,
+&:focus {
     color: $active-link-color;
 }
 }
-&__contact-icon {
+.header__contact-icon {
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 &:hover,
 &:focus {
     fill: $active-link-color;
-}
-}
-}
+}}
