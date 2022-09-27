@@ -1,30 +1,25 @@
 .activity {
     padding-top: 0;
-
 & .container {
     display: flex;
     flex-direction: column;
 }
-
 &__boxes {
     display: flex;
     justify-content: space-between;
 }
-
-&__box__plaece {
+&__box-plaece {
     display: flex;
     position: relative;
 }
-
-&__box__plaece>&__box__signature-box {
+&__box-plaece>&__signature-box {
     position: absolute;
     bottom: 0;
 }
-
-&__box__signature-box {
+&__signature-box {
     width: 370px;
     height: 70px;
-    background-color: $activity__box__signature-box-color;
+    background-color: $activity__signature-box-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;

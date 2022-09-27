@@ -54,7 +54,7 @@ svg {
   padding-bottom: 94px;
 }
 
-.sectionheader {
+.section-header {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -265,15 +265,15 @@ svg {
   display: flex;
   justify-content: space-between;
 }
-.activity__box__plaece {
+.activity__box-plaece {
   display: flex;
   position: relative;
 }
-.activity__box__plaece > .activity__box__signature-box {
+.activity__box-plaece > .activity__signature-box {
   position: absolute;
   bottom: 0;
 }
-.activity__box__signature-box {
+.activity__signature-box {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
