@@ -421,12 +421,16 @@
           <h3 class="footer__comp-name">
             <a class="comp-name footer__comp-name" href="index.html"
               ><span class="comp-name__first-word">Web</span
-              ><span class="comp-name__second-word comp-name__second-word--dark-bgd">Studio</span></a
+              ><span class="comp-name__second-word comp-name__second-word--dark-bgd"
+                >Studio</span
+              ></a
             >
           </h3>
           <address class="footer__address">
             <ul class="footer__address-links">
-              <li class="footer__address-link footer__address-link--post">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__address-link footer__address-link--post">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
               <li class="footer__address-link footer__address-link--email">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
@@ -473,12 +477,7 @@
           <h3 class="footer__form-section-head">ZAPISZ SIĘ DO NEWSLETTERA</h3>
           <form class="ft-form" name="newsletter_email" autocomplete="on">
             <label class="ft-form__label">
-              <input
-                class="ft-form__input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
+              <input class="ft-form__input" type="email" name="email" placeholder="E-mail" />
             </label>
             <button class="ft-form__submit-button" type="submit">
               Zapisz się<span class="ft-form__submit-button-icon">
@@ -494,13 +493,15 @@
     <div class="order-the-service__backdrop order-the-service__is-hidden" data-modal>
       <div class="order-the-service__modal">
         <button type="button" class="order-the-service__close-button" data-modal-close>
-          <svg class="order-the-service__close-button--close-black">
+          <svg class="order-the-service__close-button-svg">
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
         <form class="order-the-service__form">
           <div class="order-the-service__form-group" role="group" aria-labelledby="contact-head">
-            <p class="order-the-service__form-group__head" id="contact-head">Zostaw swoje dane w formularzu poniżej</p>
+            <p class="order-the-service__form-head" id="contact-head">
+              Zostaw swoje dane w formularzu poniżej
+            </p>
             <label class="order-the-service__label">
               Imię
               <input class="order-the-service__input" type="text" name="username" />
@@ -538,10 +539,13 @@
                 name="accept"
                 value="accept-reg-priv-pol"
               />
-              Oświadczam iż akceptuję <a class="order-the-service__checkbox-link" href="#rules">Regulamin</a> i
-              <a class="order-the-service__checkbox-link" href="#privacypolicy">Politykę Prywatności.</a>
+              Oświadczam iż akceptuję
+              <a class="order-the-service__checkbox-link" href="#rules">Regulamin</a> i
+              <a class="order-the-service__checkbox-link" href="#privacypolicy"
+                >Politykę Prywatności.</a
+              >
             </label>
-            <button class="order-the-service__form__submit-button" type="submit">Wyślij</button>
+            <button class="order-the-service__submit-button" type="submit">Wyślij</button>
           </div>
         </form>
       </div>

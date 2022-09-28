@@ -1,24 +1,25 @@
-.portfolio {.container {
+.portfolio {
+  .container {
     display: flex;
     flex-direction: column;
-}
-&__filter-buttons {
+  }
+  &__filter-buttons {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-}
+  }
 
-&__boxes {
+  &__boxes {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
-}
-&__creation-box {
+  }
+  &__creation-box {
     color: $text-color;
     text-decoration: none;
-}
-&__box-description {
+  }
+  &__box-description {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,68 +36,65 @@
     color: $footer-text-color;
     background-color: $animation-bg-color;
     transform: translateY(105%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitions(transform);
 }
-&__box-figcaption {
+  &__box-figcaption {
     padding: 20px 24px;
     border: 1px solid rgba(238, 238, 238, 1);
     background-color: $footer-text-color;
     z-index: 10;
-}
+  }
 
-&__name-of-project {
+  &__name-of-project {
     font-size: 18px;
     line-height: 2;
-}
+  }
 
-&__kind-of-project {
+  &__kind-of-project {
     font-size: 16px;
     line-height: 1.89;
-}
+  }
 }
 
 .portfolio__filter-buttons .portfolio__filter-button {
-    font-family: 'Roboto';
-    font-style: normal;
-    border: none;
-    background: $button-bg-color;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.63;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 6px 22px;
-    margin: 0 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:active,
-&:focus,
-&:hover {
+  font-family: 'Roboto';
+  font-style: normal;
+  border: none;
+  background: $button-bg-color;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 6px 22px;
+  margin: 0 4px;
+  @include transitions(color, border-color, box-shadow);
+  &:active,
+  &:focus,
+  &:hover {
     color: $footer-text-color;
     background-color: $active-link-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+      0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-}
+  }
 }
 
 .portfolio__box-figure {
-    margin: auto;
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    overflow: hidden;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:active,
-&:focus {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  overflow: hidden;
+  @include transitions(box-shadow);
+  &:hover,
+  &:active,
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
-&:hover .portfolio__box-description {
+  &:hover .portfolio__box-description {
     transform: translateY(0);
+  }
 }
-}
-
