@@ -1,22 +1,22 @@
 .activity {
-    padding-top: 0;
-& .container {
+  padding-top: 0;
+  & .container {
     display: flex;
     flex-direction: column;
-}
-&__boxes {
+  }
+  &__boxes {
     display: flex;
     justify-content: space-between;
-}
-&__box-plaece {
+  }
+  &__box-plaece {
     display: flex;
     position: relative;
-}
-&__box-plaece>&__signature-box {
+  }
+  &__box-plaece > &__signature-box {
     position: absolute;
     bottom: 0;
-}
-&__signature-box {
+  }
+  &__signature-box {
     width: 370px;
     height: 70px;
     background-color: $activity__signature-box-color;
@@ -28,5 +28,5 @@
     text-transform: uppercase;
     color: $footer-text-color;
     padding-top: 27px;
-}
+  }
 }
